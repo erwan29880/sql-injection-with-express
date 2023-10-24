@@ -1,4 +1,4 @@
-node_modules 
+serveur/node_modules 
 mysqld
-package-lock.json
+serveur/package-lock.json
 serveur_volume

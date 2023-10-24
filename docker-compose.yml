@@ -5,7 +5,7 @@ services:
     container_name: "node_sql_injection"
     build:
       context: .
-      dockerfile: DockerfileNode
+      dockerfile: ./serveur/DockerfileNode
     ports: 
       - 3000:5001
     volumes:
@@ -15,7 +15,7 @@ services:
     container_name: "jee_inj"
     build:
       context: .
-      dockerfile: DockerfileSql
+      dockerfile: ./bdd/DockerfileSql
     ports:
       - 3307:3306
     environment:
@@ -27,7 +27,7 @@ services:
     container_name: "proxy_sql_injection"
     build:
       context: .
-      dockerfile: DockerfileNginx
+      dockerfile: ./nginx/DockerfileNginx
     restart: always
     ports:
       - 80:80

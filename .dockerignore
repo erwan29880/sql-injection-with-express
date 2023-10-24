@@ -1,7 +1,6 @@
-node_modules
-package-lock.json
+serveur/node_modules
+serveur/package-lock.json
 readme.md
 docker-compose.yml
-Dockerfile 
 .git
 .gitignore
