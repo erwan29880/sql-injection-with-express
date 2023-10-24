@@ -1,9 +1,21 @@
 version: '3.6'
 
 services:
+  serveur:
+    container_name: "node_sql_injection"
+    build:
+      context: .
+      dockerfile: DockerfileNode
+    ports: 
+      - 3000:5001
+    volumes:
+      - ./serveur_volume:/src
+
   bddmysql:
     container_name: "jee_inj"
-    image: mysql:5
+    build:
+      context: .
+      dockerfile: DockerfileSql
     ports:
       - 3307:3306
     environment:

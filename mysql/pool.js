@@ -3,9 +3,9 @@ let conn = undefined;
 
 try {
     conn = mysql.createPool({
-        "host": "localhost",
+        "host": "jee_inj",
         "user": "root",
-        "port": 3307,
+        "port": 3306,
         "password": "pa",
         "database": "jee",
         "waitForConnections": false,
