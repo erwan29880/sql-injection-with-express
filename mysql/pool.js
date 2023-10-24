@@ -5,7 +5,7 @@ try {
     conn = mysql.createPool({
         "host": "localhost",
         "user": "root",
-        "port": 3306,
+        "port": 3307,
         "password": "pa",
         "database": "jee",
         "waitForConnections": false,
